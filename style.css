@@ -1,0 +1,86 @@
+@font-face {
+     font-family: mikhack;
+     src: url(./Mikhak-Medium.woff2);
+}
+*{
+     box-sizing: border-box;
+     font-family: mikhack !important;
+     list-style: none;
+     text-decoration: none;
+}
+body{
+     margin: 0;
+     padding: 0;
+} 
+body section{
+     position: fixed;
+     top: 0;
+     bottom: 0;
+     left: 0;
+     right: 0;
+     background: linear-gradient(130deg, #3a0185 0%, #514fad 100%);
+     display: flex;
+     justify-content: center;
+     align-items: center;
+}
+.panel{
+     background-color: #0002;
+     width: 50%;
+     height: auto;
+     box-shadow: 0 0 10px -4px black;
+     box-sizing: border-box;
+     padding: 20px;
+     border-radius: 20px;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+}
+.panel ul li{
+     display: flex;
+     justify-content:space-between;
+     flex-flow: row-reverse;
+     align-items: center;
+}
+.panel ul li h6 , .panel ul li span{
+     color: aliceblue;
+}
+#btn-weather{
+     margin: 5px;
+     width: 40%;
+     background-color: #ffffff;
+     padding: 10px;
+     margin: 10px 0px;
+     border: 0px;
+     border-radius: 500px;
+     font-size: 12px;
+     font-weight: bold;
+     outline:none;
+     text-align: center;
+     box-shadow: 0 0 20px -15px rgb(0, 0, 0);
+     cursor: pointer;
+     transition: all 0.3s ease;
+}
+#btn-weather:hover{
+     background-color: #cbaeff;
+     transition: all 0.3s ease;
+}
+.weather-control{
+     display: flex;
+     justify-content: space-between;
+     align-items: center;
+}
+.weather-control input{
+     margin: 5px;
+     width: 60%;
+     padding: 10px;
+     border-radius: 500px;
+     outline: none;
+     border: 0px;
+}
+.weather-control input ,.weather-control input:placeholder-shown , .weather-control input:focus{
+     font-size: 12px;
+     font-weight: bold;
+     font-family: mikhak;
+     color: #6363d8;
+     text-align: right;
+}
